@@ -17,6 +17,7 @@ int main(void)
 		perror("fcntl");
 		exit(1);
 	}
+
 tryagain:
 	n = read(STDIN_FILENO, buf, 10);  //read input from the standard input
 	if (n < 0) {
